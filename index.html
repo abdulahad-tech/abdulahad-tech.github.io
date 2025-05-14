@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ahad-Tech Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(221, 29, 29);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #cccccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">AHAD-TECH</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+	<div class="home-slider owl-carousel">
+		<div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+					<div class="one-third js-fullheight order-md-last img" style="background-image: url('./images/ffffff.png'); background-size: cover; background-position: top; background-repeat: no-repeat;">
+
+						<div class="overlay"></div>
+					</div>
+					<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+						<div class="text">
+							<span class="subheading">Hello!</span>
+							<h1 class="mb-4 mt-3">I'm <span>Muhammad Adulahad</span></h1>
+
+							<!-- Element to contain animated typing -->
+							<span id="typing-animation"></span>
+
+							<script>
+								const typingAnimationElement = document.getElementById('typing-animation');
+								const typingTexts = ['DEVELOPER  ', 'DESIGNER  ', 'Teacher   '];
+								function playTypingAnimation(text) {
+									for (let i = 0; i < text.length; i++) {
+										setTimeout(() => {
+											typingAnimationElement.textContent += text[i];
+										}, i * 200);
+									}
+									setTimeout(() => {
+										typingAnimationElement.textContent = '';
+										playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+									}, text.length * 200);
+								}
+								playTypingAnimation(typingTexts[0]);
+							</script>
+
+							<br><br>
+							<h2>SENIOR SOFTWARE ENGINEER</h2>
+							<p>
+								<a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>
+								<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+<img src="images/ffffff.png" class="img-fluid rounded b-shadow-a" alt="My Local Photo">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Abdul-Ahad</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Software Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years </span></p>
+										<p><span class="title-s">Address: </span> <span>Lahoe, Pakistan</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>C#</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>ASP.NET Core</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Entity Framework (EF) Core</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL Server </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With 5+ years of hands-on expertise in .NET development and a solid engineering foundation, I specialize in crafting high-performance web applications using ASP.NET, C#, and the .NET ecosystem. From designing seamless APIs to optimizing databases, I excel at building robust solutions that drive business success. My passion for clean code, coupled with my experience in leading teams and mentoring developers, ensures every project is delivered with precision and impact.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Language:</span> <span>English,Urdu </span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor In Computer science</span></li>
+									<li class="d-flex"><span>Profile:</span> <span>SENIOR DEVELOPER &amp; DESIGNER</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>FULL-STACK .NET DEVELOPER, Web Development, Web DESIGNER</span></li>
+									
+									<li class="d-flex"><span>Frameworks:</span> <span>Dot NET,Asp Dot Net</span></li>
+									<li class="d-flex"><span>Front-End Technologies:</span> <span>Angular, React, Blazor, GSAP, Framer Motion, Anime.js, Lottie, Material-UI, Angular Material, Tailwind CSS, Bootstrap </span></li>
+									<li class="d-flex"><span>BACK-END:</span> <span>c#</span></li>
+									<li class="d-flex"><span>BACK-END:</span> <span>SQL Server, Entity Framework, MySQL, PostgreSQL, SQLite</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/muhammadabdulahad/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>SENIOR SOFTWARE ENGINEER</h2>
+						<span class="position">WANOLOGICAL SOLUTION</span>
+						<span class="position">
+            <img src="images/Wono.png" alt="NETSOL Icon" style="height:40px; vertical-align:middle; margin-right:8px;">
+            
+        </span>
+						<p class="mt-4">Wanological Solution is a technology company specializing in CRM solutions for property management, offering tools for lead tracking, invoicing, and project oversight.
+							<ul>
+								<li>Led the development and optimization of CRM modules for property listings, client management, and sales tracking, enhancing user engagement and operational efficiency.</li>
+								<li>Integrated third-party APIs for payment processing and communication tools, streamlining client interactions and transaction workflows.</li>
+								<li>Conducted code reviews and implemented best practices, resulting in improved system performance and maintainability.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+
+
+				 
+
+
+
+
+
+
+				
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2023</span>
+						<h2>SOFTWARE ENGINEER</h2>
+						<span class="position">NETSOL</span>
+						<span class="position">
+            <img src="images/Netsol Icon.png" alt="NETSOL Icon" style="height:40px; vertical-align:middle; margin-right:8px;">
+            
+        </span>
+						<p class="mt-4">Netsol is a global business services and enterprise application solutions company, specializing in NFS products. 
+							<ul>
+								<li>Developed, maintained, and enhanced NFS applications to streamline automotive finance operations, resulting in improved system efficiency and reduced downtime..</li>
+								<li>Conducted thorough testing and debugging of software modules, ensuring robust functionality and seamless user experience..</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+         <br>
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2021</span>
+    					<h2>Bachelor In Computer Sciences</h2>
+    					<span class="position">University of Sargodha</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2017</span>
+    					<h2>Inter Computer science</h2>
+    					<span class="position">Punjab Group of college</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="images/Abdulahad-CV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+					
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Below are the sample Data Analytics projects on , WEBSITES, Power BI & ML.</p>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <!-- First Project - Now with Video -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="height: 250px; overflow: hidden;">
+            <video controls width="100%" height="100%" style="object-fit: cover;" poster="images/ABC.mp4">
+              <source src="images/ABC.mp4" type="video/mp4">
+			  
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">WEBSITE | App | GRAPHIC  AGANCY</a></h3>
+            <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Rest of the projects remain unchanged -->
+      <!-- First Project - Now with Video -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="height: 250px; overflow: hidden;">
+            <video controls width="100%" height="100%" style="object-fit: cover;" poster="images/ABC.mp4">
+              <source src="images/ABC.mp4" type="video/mp4">
+			  
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">WEBSITE | App | GRAPHIC  AGANCY</a></h3>
+            <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- First Project - Now with Video -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="height: 250px; overflow: hidden;">
+            <video controls width="100%" height="100%" style="object-fit: cover;" poster="images/ABC.mp4">
+              <source src="images/ABC.mp4" type="video/mp4">
+			  
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">WEBSITE | App | GRAPHIC  AGANCY</a></h3>
+            <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+          </div>
+        </div>
+      </div>
+    
+    <br>
+    <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="height: 250px; overflow: hidden;">
+            <video controls width="100%" height="100%" style="object-fit: cover;" poster="images/ABC.mp4">
+              <source src="images/ABCD.mp4" type="video/mp4">
+			  
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">WEBSITE | App | GRAPHIC  AGANCY</a></h3>
+            <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <div class="block-20 zoom-effect" style="height: 250px; overflow: hidden;">
+            <video controls width="100%" height="100%" style="object-fit: cover;" poster="images/ABC.mp4">
+              <source src="images/ABCD.mp4" type="video/mp4">
+			  
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">WEBSITE | App | GRAPHIC  AGANCY</a></h3>
+            <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Below are the details to reach out to me!</p>
+      </div>
+    </div>
+
+    <!-- Enhanced Contact Form -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 col-lg-6 ftco-animate">
+        <div class="premium-contact-form p-5 shadow-lg">
+          <form id="premiumContactForm">
+            <!-- Name Field with Icon -->
+            <div class="form-group icon-input-group">
+              <div class="input-wrapper">
+                <span class="icon icon-user"></span>
+                <input type="text" class="form-control" id="premiumName" placeholder=" " required>
+                <label for="premiumName">Your Name</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            
+
+           <!-- Name Field with Icon -->
+            <div class="form-group icon-input-group">
+              <div class="input-wrapper">
+                <span class="icon icon-user"></span>
+                <input type="text" class="form-control" id="premiumName" placeholder=" " required>
+                <label for="premiumName">Purpose of Contact</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+
+
+
+            <!-- Email Field with Icon -->
+            <div class="form-group icon-input-group">
+              <div class="input-wrapper">
+                <span class="icon icon-envelope"></span>
+                <input type="email" class="form-control" id="premiumEmail" placeholder=" " required>
+                <label for="premiumEmail">Your Email</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            
+            <!-- Message Field with Icon -->
+            <div class="form-group icon-input-group">
+              <div class="input-wrapper">
+                <span class="icon icon-pencil"></span>
+                <textarea class="form-control" id="premiumMessage" rows="4" placeholder=" " required></textarea>
+                <label for="premiumMessage">Your Message</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="form-group text-center mt-4">
+              <button type="submit" id="premiumSubmitBtn" class="btn btn-primary btn-block py-3 px-4 glowing-btn" disabled>
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon">→</span>
+                <span class="btn-particles"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex contact-info mb-5">
+      <!-- Your existing contact info boxes here -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p>Lahore, Pakistan</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel://0101010101">+923171432117</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-paper-plane"></span>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p><a href="mailto:info@yoursite.com">Ahadshakeel495@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-globe"></span>
+          </div>
+          <h3 class="mb-4">Download Resume</h3>
+          <p><a href="images/Abdulahad-CV.pdf" download="Abdulahad-CV.pdf" target="_blank">Download Resume</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Premium Contact Form Styling */
+  .premium-contact-form {
+    background: linear-gradient(135deg, #04535e 0%, #273a4b 100%);
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .premium-contact-form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(67, 97, 238, 0.05),
+      rgba(247, 37, 133, 0.05)
+    );
+    transform: rotate(30deg);
+    animation: gradientRotate 15s infinite linear;
+    z-index: -1;
+  }
+  
+  .icon-input-group {
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+  }
+  
+  .icon-input-group .input-wrapper {
+    position: relative;
+  }
+  
+  .icon-input-group .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #010208;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .icon-input-group input,
+  .icon-input-group textarea {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: none;
+    border-bottom: 2px solid #e9ecef;
+    font-size: 16px;
+    color: #574949;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .icon-input-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    padding-top: 20px;
+  }
+  
+  .icon-input-group label {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    color: #adb5bd;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    width: calc(100% - 45px);
+    height: 2px;
+    background: linear-gradient(to right, #4361ee, #3a0ca3);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-input-group input:focus,
+  .icon-input-group textarea:focus {
+    outline: none;
+    border-bottom-color: transparent;
+  }
+  
+  .icon-input-group input:focus ~ .underline,
+  .icon-input-group input:valid ~ .underline,
+  .icon-input-group textarea:focus ~ .underline,
+  .icon-input-group textarea:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  
+  .icon-input-group input:focus ~ label,
+  .icon-input-group input:valid ~ label,
+  .icon-input-group textarea:focus ~ label,
+  .icon-input-group textarea:valid ~ label {
+    top: -10px;
+    left: 45px;
+    font-size: 12px;
+    color: #332404;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 0 5px;
+  }
+  
+  /* Glowing Button */
+  .glowing-btn {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+    border: none;
+    background: linear-gradient(45deg, #4361ee, #3a0ca3);
+    color: rgb(247, 244, 244);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .glowing-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      #4361ee, #3a0ca3, #7209b7, #f72585,
+      #4361ee, #3a0ca3, #7209b7, #f72585
+    );
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: glowing 20s linear infinite;
+  }
+  
+  .glowing-btn:hover::before {
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(67, 97, 238, 0.4);
+  }
+  
+  .glowing-btn:active {
+    transform: translateY(-1px);
+  }
+  
+  .glowing-btn:disabled {
+    background: #adb5bd !important;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .glowing-btn:disabled::before {
+    opacity: 0;
+  }
+  
+  .btn-icon {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .glowing-btn:hover .btn-icon {
+    transform: translateX(5px);
+  }
+  
+  /* Button Particles Effect */
+  .btn-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  /* Runaway effect */
+  .runaway-animation {
+    animation: runaway 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+  
+  /* Success state */
+  .success-animation {
+    animation: successPulse 0.5s ease-in-out 3;
+    background: linear-gradient(45deg, #4cc9f0, #4895ef) !important;
+  }
+  
+  /* Keyframes */
+  @keyframes gradientRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes runaway {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-20px);
+    }
+    40% {
+      transform: translateX(20px);
+    }
+    60% {
+      transform: translateX(-40px);
+    }
+    80% {
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateX(-100vw);
+    }
+  }
+  
+  @keyframes successPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(4, 77, 99, 0.7);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(76, 201, 240, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(76, 201, 240, 0);
+    }
+  }
+  
+  /* Floating animation for form elements */
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .icon-input-group {
+    animation: floatIn 0.8s forwards;
+  }
+  
+  .icon-input-group:nth-child(1) { animation-delay: 0.1s; }
+  .icon-input-group:nth-child(2) { animation-delay: 0.3s; }
+  .icon-input-group:nth-child(3) { animation-delay: 0.5s; }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('premiumContactForm');
+    const submitBtn = document.getElementById('premiumSubmitBtn');
+    const inputs = document.querySelectorAll('#premiumContactForm input, #premiumContactForm textarea');
+    
+    // Initially disable the button
+    submitBtn.disabled = true;
+    
+    // Check all fields on input
+    function checkFields() {
+      let allFilled = true;
+      inputs.forEach(input => {
+        if (input.value.trim() === '') {
+          allFilled = false;
+        }
+      });
+      submitBtn.disabled = !allFilled;
+      return allFilled;
+    }
+    
+    // Runaway button effect
+    submitBtn.addEventListener('mouseover', function() {
+      if (!checkFields()) {
+        submitBtn.classList.add('runaway-animation');
+        setTimeout(() => {
+          submitBtn.classList.remove('runaway-animation');
+          submitBtn.style.transform = 'translateX(0)';
+        }, 1000);
+      }
+    });
+    
+    // Form submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      if (checkFields()) {
+        // Show success effect
+        submitBtn.classList.add('success-animation');
+        submitBtn.querySelector('.btn-text').textContent = 'MESSAGE SENT!';
+        submitBtn.querySelector('.btn-icon').textContent = '✓';
+        
+        // Here you would normally send the form data
+        setTimeout(() => {
+          form.reset();
+          submitBtn.querySelector('.btn-text').textContent = 'Send Message';
+          submitBtn.querySelector('.btn-icon').textContent = '→';
+          submitBtn.disabled = true;
+          submitBtn.classList.remove('success-animation');
+        }, 3000);
+      }
+    });
+    
+    // Real-time validation
+    inputs.forEach(input => {
+      input.addEventListener('input', checkFields);
+      
+      // Add focus animation
+      input.addEventListener('focus', function() {
+        this.parentElement.querySelector('.underline').style.transform = 'scaleX(1)';
+      });
+      
+      input.addEventListener('blur', function() {
+        if (this.value.trim() === '') {
+          this.parentElement.querySelector('.underline').style.transform = 'scaleX(0)';
+        }
+      });
+    });
+  });
+</script>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		
+
+
+
+
+
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/muhammadabdulahad/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Abdulahad</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+
+
+ 
